@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ecomarce</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+<style>
+*{
+	  box-sizing: border-box;
+}
+@font-face{
+	font-family: opensource;
+	src: url(OpenSans-Regular-webfont.eot,OpenSans-Regular-webfont.woff);
+}
+body{
+	font-family: opensource;
+}
+.containts{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns:repeat(3,1fr);
+	grid-template-rows:repeat(1, minmax(300px,min-content));
+	grid-gap: 10px;
+box-shadow: 0px 4px 10px 3px rgba(67,31,31,0.28);
+-webkit-box-shadow: 0px 4px 10px 3px rgba(67,31,31,0.28);
+-moz-box-shadow: 0px 4px 10px 3px rgba(67,31,31,0.28);
+}
+	.item1{background: ;
+		grid-column: 1/span 2;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	
+	
+	
+
+	}
+	.item2{background: #DEE1E6;
+grid-column: 3/span 4;
+margin-top: ;
+	}
+	.item3{background: ;
+grid-column: 1/5;
+	}
+.sub1{background: ;
+grid-column: 1/span 3;
+display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows:  repeat(1, minmax(1fr min-content));
+	grid-gap: 5px;
+
+}
+.links a{text-decoration: none;color: #EBEDEF}
+.links:hover{background: #3B4284;transition: all 1ss}
+
+.links:hover span{color:white;}
+.link1{background: #2E2D3D;align-self: center;}
+.link2{background: #3B4284;align-self: center;}
+.link2 span{color:white;}
+.link3{background: #2E2D3D;align-self: center;}
+.link4{background: #2E2D3D;align-self: center;}
+
+.sub2{background: #F1F3F4;
+grid-column: 1/span 3;
+}
+.order-form{margin: 0 auto;width: 70%;}
+input{
+	box-shadow: 6px 6px 10px 3px rgba(67,31,31,0.28);
+-webkit-box-shadow: 6px 6px 10px 3px rgba(67,31,31,0.28);
+-moz-box-shadow: 6px 6px 10px 3px rgba(67,31,31,0.28);
+   border: 1px solid #ccc;
+   
+   outline: 0;
+ }
+ .input-group-prepend span{
+    
+  }
+  
+.sub3{background: gray;}
+.sub4{background: skyblue;}
+
+
+	.item3{background: #1D2153;}
+.total{ padding: 5px 0 25px 0;border-top: 2px solid black !important;}
+.total{font-weight: bold;font-size: 1.3em;}
+	.sliderbox{width: 60%;height:auto;border: 1px solid black;margin:30px auto;
+
+border-top-left-radius: 60px;border-bottom-right-radius: 60px;
+background: #C7CBD1;overflow: hidden;
+
+ 
+	}
+	
+	.heading{border-bottom: 1px solid red;padding: 15px 0 15px 0;background: #8000FF;color: white}
+	.orderlist ul{margin: 10px;padding: 0;list-style: none;}
+	.orderlist ul li{border-bottom: 1px solid gray;padding: 7px 7px;overflow: hidden}
+	.orderlist ul li span{}
+	.orderlist ul li:last-child{border-bottom:none;}
+	.orderlist ul li b{}
+	.check-button{padding: 25px 0 25px 0; }
+
+
+@media only screen and (max-width: 600px) {
+.item2{background: #DEE1E6;
+grid-column: 1/span 4;
+}
+.item1{background: ;
+		grid-column: 1/span 4;
+	}
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="containts">
+
+	<div class="items item1">
+		<div class="sub-items sub1 text-center">
+<div class="links link1 p-1"><span class="far fa-check-circle"></span>
+	&nbsp;&nbsp;<a href="#">Packges</a>
+</div>
+
+		<div class="links p-1 link2">
+			<span class="far fa-check-circle"></span>
+	&nbsp;&nbsp;<a href="#" class="">Information</a>
+		</div>
+
+		<div class="links p-1 link3 ">
+<span class="far fa-check-circle"></span>&nbsp;&nbsp;
+			<a href="#">Review</a>
+		</div>
+
+		<div class="links p-1 link4">
+<span class="far fa-check-circle"></span>
+	&nbsp;&nbsp;
+			<a href="#">Payment</a></div>
+		</div>
+
+		<div class="sub-items sub2">
+			<div class="m-3 text-center"><h4>Type of work and deadline</h4></div>
+			<div class="order-form">
+				<div class="input-group mb-3">
+					
+  <div class="input-group-prepend">
+    <span class="btn btn-outline-secondary " type="button" >
+    	<i class="far fa-user"></i></span>
+    
+  </div>
+  <input type="text" class="form-control" placeholder="Full name">
+</div>
+
+
+<div class="input-group mb-3">
+	
+  <div class="input-group-prepend">
+    <span class="btn btn-outline-secondary " type="button" >
+    	<i class="fas fa-envelope"></i>
+    </span>
+    
+  </div>
+  <input type="text" class="form-control" placeholder="Email address">
+</div>
+
+
+<div class="input-group mb-3">
+
+	
+  <div class="input-group-prepend">
+    <span class="btn btn-outline-secondary " type="button" >
+    	<i class="fas fa-phone"></i>
+    </span>
+    
+  </div>
+  <input type="text" class="form-control" placeholder="Mobile Number">
+</div>
+
+
+<div class="input-group mb-3">
+	
+  <div class="input-group-prepend">
+    <span class="btn btn-outline-secondary " type="button" >
+    <i class="far fa-address-card"></i>
+    </span>
+    
+  </div>
+  <input type="text" class="form-control"  placeholder="Address 1 Line">
+</div>
+
+
+<div class="input-group mb-3">
+	
+  <div class="input-group-prepend">
+    <span class="btn btn-outline-secondary " type="button" >
+    <i class="far fa-address-card"></i>
+    </span>
+    
+  </div>
+  <input type="text" class="form-control"  placeholder="Address 2 Line">
+</div>
+<div class="input-group mb-3">
+	
+  <select class="form-control  m-1">
+  	<option>select state</option>
+  	<option>west bengal</option>
+  	<option>bihar</option>
+  </select>
+  
+  
+</div>
+<div class="input-group mb-3">
+	
+  
+  <select class="form-control m-1">
+  	<option>select City</option>
+  	<option>west bengal</option>
+  	<option>bihar</option>
+  </select>
+  <div class="input-group-prepend">
+   <span class="title mt-2" type="button" >zipcode</span>
+   
+  </div>
+   <input type="number" class="form-control m-1" aria-label="Text input with dropdown button">
+</div>
+<div class="input-group-prepend">
+    <span class="title" type="button" >Additional Information</span>
+    </div>&nbsp;&nbsp;<br/>
+<div class="input-group mb-3">
+	
+  
+  
+  
+ <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="some text here.."></textarea>
+</div>
+<div class="input-group mb-3">
+
+	<div class="input-group-prepend mt-2">
+    <span class="title" type="button" >Do you have an existing CV?</span>
+    </div>&nbsp;&nbsp;
+  <div class="button1"><button class="btn btn-success px-4 m-2">Yes</button></div>
+	<div class="buttons "><button class="btn btn-danger  px-4 m-2">No</button></div>
+  
+ 
+</div>
+<div class="" id="filesform">
+	<div class="input-group-prepend">
+   <span class="title" type="button" ></span>
+   
+  </div>
+   <input type="file" class="form-control m-1" aria-label="Text input with dropdown button">
+</div>
+
+
+
+
+
+			</div>
+
+		</div>
+
+
+
+
+		
+	</div>
+	<div class="items item2">
+		<div class="adones text-center">
+			<h3 class="p-3">Addons</h3>
+		</div>
+		
+<div class="order-type">
+	<span class="p-3" style="color:#3B4284">Choose your  delivery option</span>
+	<ul>
+		<li>
+			
+			<span class="float-left"><input type="checkbox" class="">&nbsp;&nbsp;Standard delivery (default)</span>
+			<strong class="float-right">$10</strong>
+			<br/>
+<p class="ml-3">Writer with English as a native language1</p>
+		</li>
+		
+			<li>
+				
+			<span class="float-left"><input type="checkbox" class="">&nbsp;&nbsp;Express Delivery (2-3 business days)
+</span>
+			<strong class="float-right">$39</strong>
+			<br/>
+<p class="ml-3">Detailed comments on the key writing aspects of your paper</p>
+		</li>
+	
+		
+			<li>
+			
+			<span class="float-left"><input type="checkbox" class="">&nbsp;&nbsp;Next Day delivery</span>
+			<strong class="float-right">$19.99</strong>
+			<br/>
+<p class="ml-3">3 samples of works previously completed by your writer</p>
+		
+		</li>
+		<li>
+			
+			<span class="float-left"><input type="checkbox" class="">&nbsp;&nbsp;Cover letter</span>
+			<strong class="float-right">$100</strong>
+			<br/>
+<p class="ml-3">Selection of related articles and books, cited in your paper</p>
+		</li>
+	
+	
+			<li>
+				
+			<span class="float-left"><input type="checkbox" class="">&nbsp;&nbsp;LinkedIn profile</span>
+			<strong class="float-right">$75</strong>
+			<br/>
+<p class="ml-3">Part-by-part delivery of your paper</p>
+		</li>
+		
+	</ul>
+</div>
+<img src="img/image1.jpg" width="100%"/>
+	</div>
+	<div class="items item3">
+<div class="sliderbox text-center">
+	<div class="heading  "><h4>Professional Growth</h4></div>
+		<div class="orderlist">
+<ul>
+	<li>
+		<span class="float-left"><span>1. </span>Professional Growth</span><b class="float-right">$165.00</b></li>
+	<li>
+		<span class="float-left"><span>2. </span>Express Delivery (2-3 business days)</span><b class="float-right">$39</b></li>
+	
+		
+
+</ul>
+		</div>
+		
+		<div class="total m-3"><span class="float-left">Total Amount</span><b class="float-right"> $204</b>
+		</div>
+			<div class="check-button pt-2">
+				<button class="btn btn-primary">CLICK NEXT TO PROCEED</button>
+
+			</div>
+
+<style>
+hr{border: 1px solid black;}
+input[type=checkbox]{}
+.order-type ul{
+	width: 100%;
+	list-style: none;
+	margin:0;padding:0;
+}
+.order-type ul li{
+background: #8000FF;border-bottom: 1px solid black;padding: 7px;color: white;
+}
+.order-type ul li p{font-size: .7em;}
+.adones h3{font-family: sans-serif;font-style:;background: #3B4284;color: white}
+	#filesform{display: none;}
+}
+</style>
+
+	</div>
+
+	</div>
+
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+	
+<script>
+ $(document).ready(function(){
+$(".button1").click(function(){
+$("#filesform").toggle();
+});
+ });           
+             
+</script>
+</body>
+</html>
